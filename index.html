@@ -3,55 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>TechSolutions - Contacto</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<header>
+<body>
+  <header>
     <nav>
+      <div class="logo">TechSolutions</div>
+      <div class="nav-links">
         <a href="/">Inicio</a>
         <a href="/nosotros">Nosotros</a>
         <a href="/servicios">Servicios</a>
         <a href="/contacto">Contacto</a>
+      </div>
     </nav>
-</header>
-<footer>
-    <p>&copy; Proyecto simple</p>
-</footer>
-<body>
+  </header>
 
-    <section class="contact-section">
+  <section class="hero">
+    <h1>Soluciones Tecnológicas Innovadoras</h1>
+    <p>Ofrecemos servicios de desarrollo web, aplicaciones móviles y consultoría tecnológica para llevar tu negocio al siguiente nivel.</p>
+    <a href="#contacto" class="btn">Contáctanos</a>
+  </section>
+
+  <section class="services">
+    <h2>Nuestros Servicios</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Desarrollo Web">
+        <div class="service-card-content">
+          <h3>Desarrollo Web</h3>
+          <p>Creación de sitios web modernos, responsivos y optimizados para todos los dispositivos.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Apps Móviles">
+        <div class="service-card-content">
+          <h3>Apps Móviles</h3>
+          <p>Desarrollo de aplicaciones nativas e híbridas para iOS y Android.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Consultoría">
+        <div class="service-card-content">
+          <h3>Consultoría TI</h3>
+          <p>Asesoramiento especializado para optimizar tus procesos tecnológicos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contacto">
     <h2>Contacto</h2>
     <p>Envíanos un mensaje y nos pondremos en contacto contigo.</p>
 
-    <form class="contact-form">
-      <label for="name">Nombre</label>
-      <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Información de Contacto</h3>
+        <p>Estamos aquí para ayudarte. Contáctanos a través de cualquiera de estos medios:</p>
+        
+        <div class="contact-details">
+          <div>
+            <i>📍</i>
+            <span>Av. Tecnología 123, Ciudad Digital</span>
+          </div>
+          <div>
+            <i>📞</i>
+            <span>+52 55 1234 5678</span>
+          </div>
+          <div>
+            <i>✉️</i>
+            <span>info@techsolutions.com</span>
+          </div>
+          <div>
+            <i>🕒</i>
+            <span>Lun - Vie: 9:00 - 18:00</span>
+          </div>
+        </div>
+      </div>
 
-      <label for="email">Correo electrónico</label>
-      <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+        </div>
 
-      <label for="message">Mensaje</label>
-      <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+        </div>
 
-      <button type="submit">Enviar</button>
-    </form>
+        <div class="form-group">
+          <label for="subject">Asunto</label>
+          <input type="text" id="subject" name="subject" placeholder="Asunto del mensaje" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Enviar Mensaje</button>
+      </form>
+    </div>
   </section>
-</body>
-<div>
-    <footer>
-        <h1>About Us</h1>
-        <br>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>TechSolutions</h3>
+        <p>Tu partner tecnológico de confianza para transformar ideas en soluciones digitales.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>About Us</h4>
         <p>Integrantes:</p>
-        <br>
-        <p>Diego</p>
-        <p>Frida</p>
-        <p>Chuy</p>
-        <br>
-        <br>
-        <h3>IDGS 9A</h3>
-        <h3>Exercise 2</h3>
+        <ul>
+          <li>Diego</li>
+          <li>Frida</li>
+          <li>Chuy</li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Información Académica</h4>
+        <p>IDGS 9A</p>
+        <p>Exercise 2</p>
         <p>22/09/2025</p>
         <p>Maestro: Vidal</p>
-    </footer>
-</div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 TechSolutions - Proyecto Simple. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
 </html>
